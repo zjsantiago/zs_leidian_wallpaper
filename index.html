@@ -1,0 +1,321 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="ie6 oldie" lang="zh"><![endif]-->
+<!--[if IE 7]>
+<html class="ie7 oldie" lang="zh"><![endif]-->
+<!--[if IE 8]>
+<html class="ie8 oldie" lang="zh"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="zh"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>雷电-手助嵌入页</title>
+    <link rel="stylesheet" href="http://s6.qhimg.com/static/80a46cc139134cdd/bc.css"/>
+    <style type="text/css">
+    /*背景、水平剧中*/
+    body {
+        background: url(http://p8.qhimg.com/d/inn/1805bfcc/bg.jpg) repeat-x;
+    }
+    .wrapper {
+        margin: 0 auto;
+        width: 808px;
+    }
+    .inner-wrapper{
+        float: left;
+        width: 808px;
+    }
+
+    /*顶栏*/
+    .topbar {
+        height: 37px;
+        line-height: 37px;
+        position: relative;
+        overflow: hidden;
+    }
+    .logo{
+        height: 37px;
+        padding: 3.5px 0px;
+    }
+    .logo img {
+        height: 30px;
+    }
+    /*搜索推荐*/
+    .recommend {
+        position: absolute;
+        right: 0px;
+    }
+    .recommend a {
+        color: #626262;
+        margin-right: 13px;
+    }
+    .recommend a:hover {
+        color: #0063cb;
+    }
+    .recommend a:last-child {
+        margin-right: 0px;
+    }
+
+    /*图片列表*/
+    .list {
+        padding-top: 12px;
+        
+    }
+    .list ul {
+        font-size: 0;
+        width: 813px;
+    }
+    .list .photo {
+        width: 266px;
+        height: 162px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        overflow: hidden;
+        position: relative;
+    }
+    .list .photo .img-wrap {
+        overflow: hidden;
+        display: block;
+        height: 266px;
+        height: 162px;
+    }
+    .list .photo a img {
+        width: 266px;
+        height: 162px;
+    }
+    /*设为壁纸，下载至手机*/
+    .list .photo .item-info {
+        position: relative;
+        background-color: rgba(0,0,0,0.5);
+        filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#80000000,endcolorstr=#80000000,gradientType=0);
+        height: 35px;
+        line-height: 35px;
+        overflow: hidden;
+        padding: 7px 0px;
+        text-align: right;
+    }
+    /*ie7 时去掉.item-info的padding*/
+    *+html .list .photo .item-info {
+        padding: 0;
+    }
+    .list .photo .item-info a {
+        font-size: 12px;
+        display: inline-block;
+        padding: 0 8px;
+        margin-right: 10px;
+        height: 22px;
+        line-height: 22px;
+        overflow: hidden;
+        background: url(http://p4.qhimg.com/t010e9132f38c1f2141.png) no-repeat;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .list .photo .item-info a:active {
+        background-position: 0 -60px;
+        color: #e6d8dc;
+    }
+
+    /*分页*/
+    .pageation {
+        border-top: 1px solid #f0f0f0;
+        width: auto;
+        margin-top: 15px;
+    }
+    .pageation .result-num {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin-left: 30px;
+        position: relative;
+        top: -10px;
+        color: #b5b4b4;
+    }
+    .pageation ul, .pageation .result-num {
+        position: relative;
+        right: -40px;
+    }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="inner-wrapper">
+        <div class="topbar">
+            <div class="logo">
+                <a href="javascript:void(0);">
+                    <img src="http://p4.qhimg.com/d/inn/6ba4f6e2/logo.png"/>
+                </a>
+            </div>
+            <div class="recommend">
+                <span>网友们还在搜：</span>
+                <a href="javascript:void(0);">羽绒服</a>
+                <a href="javascript:void(0);">毛呢</a>
+                <a href="javascript:void(0);">外套</a>
+                <a href="javascript:void(0);">短靴</a>
+                <a href="javascript:void(0);">打底裤</a>
+                <a href="javascript:void(0);">秋冬连衣裙</a>
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+                <li class="photo">
+                    <a href="javascript:void(0);"><img src="http://p2.so.qhimg.com/dm/316_236_/t01c023e40fa26dfedc.jpg"/></a>
+                    <div class="item-info">
+                        <a href="javascript:void(0);">设为壁纸</a>
+                        <a href="javascript:void(0);">下载至手机</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pageation">
+            <ul>
+                <li>
+                    <a href="" class="prev">
+                        <span>
+                            <s class="icon_arrow_prev"></s>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="current">
+                        <span>2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>4</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="next">
+                        <span>
+                            <s class="icon_arrow_next"></s>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="result-num">
+                <p>找到相关图片约<span>5351542</span>张</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://s0.qhimg.com/lib/jquery/183.js"></script>
+<script type="text/javascript">
+(function ($) {
+    //图片hover显示下载至手机
+    var lists = $('div.list');
+    if (!lists[0]) {
+        return;
+    }
+    lists.delegate('.photo', 'mouseenter', function () {
+        var photo = $(this);
+        var pos = "-35px";
+        var info = photo.children('.item-info'); 
+        if( info.is(':animated') ){
+            info.stop( true, false );
+        } 
+        info.animate({'top': pos}, 200);
+    });
+    lists.delegate('.photo', 'mouseleave', function () {
+        var photo = $(this);
+        var info = photo.children('.item-info');
+        if( info.is(':animated') ){
+            info.stop( true, false );
+        } 
+        info.animate({'top': 0}, 200);
+    });
+})(jQuery);
+</script>
+</body>
+</html>
