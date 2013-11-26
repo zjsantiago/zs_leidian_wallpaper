@@ -1,0 +1,19 @@
+define(function(){
+
+'use strict';
+
+var LightBox = function (target, options) {
+
+};
+
+LightBox.prototype = {
+	
+};
+
+//添加到$.ui中
+if( !$.ui ){
+	$.ui = {};
+}
+
+$.ui.LightBox;
+});
